@@ -1,6 +1,6 @@
 Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license()" for more information.
->>> f  = open("sample_input.txt","r")
+>>> f  = open("input.txt","r")
 x = int(f.readline().split(': ')[1])
 y = f.readline()
 y = f.readline()
@@ -18,7 +18,7 @@ for line in lines:
 
 ans = {k: v for k, v in sorted(goodies.items(), key=lambda item: item[1])}
 
-output = open("sample_output.txt","w")
+output = open("output.txt","w")
 
 output.write("The goodies selected for distribution are: \n\n")
 
